@@ -1,0 +1,59 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan&display=swap');
+
+@variants hover , group-hover {
+    .text-gradient {
+        background: rgb(97,67,133);
+        background: linear-gradient(90deg, rgba(97,67,133,1) 0%, rgba(81,99,149,1) 70%);
+        background-clip:text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .gradient {
+        background: rgb(97,67,133);
+        background: linear-gradient(90deg, rgba(97,67,133,1) 0%, rgba(81,99,149,1) 70%);
+    }
+}
+
+@responsive {
+    .basis-50 {
+        flex-basis: 50%;
+    }
+    
+    .basis-auto {
+        flex-basis : auto;
+    }
+
+    .basis-full {
+        flex-basis : 100%;
+    }
+}
+
+::selection {
+    background: #3c3c3c;
+    color: white !important;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.hr {
+    border-top-width: 5px;
+    border-color: #663399;
+    width: 9%;
+    border-radius: 0 7px;
+}
